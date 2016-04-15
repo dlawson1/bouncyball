@@ -20,24 +20,17 @@
       // The x and y position of the ball. Start in the center
       var ballX = CANVAS_WIDTH / 2;
       var ballY = CANVAS_HEIGHT / 2;
+      var ballX2 = CANVAS_WIDTH / 3;
+      var ballY2 = CANVAS_HEIGHT / 2;
 
       // The current speed of the ball
       var dx = 2;
       var dy = 6;
-      
-     // Radius of the ball
-      var BALL_RADIUS2 = 30;
+      var dx2 = -2;
+      var dy2 = -6;
 
       // Color of the ball
-      var BALL_COLOR2 = "#aa000f";
-
-      // The x and y position of the ball. Start in the center
-      var ballX2 = CANVAS_WIDTH / 2;
-      var ballY2 = CANVAS_HEIGHT / 2;
-
-      // The current speed of the ball
-      var dx2 = 2;
-      var dy2 = 6;
+      var BALL_COLOR2 = "#0000ff";
 
 
       /**
@@ -48,8 +41,8 @@
         // Move the ball
         ballX = ballX + dx;
         ballY = ballY + dy;
-        ballX2 = ballX + dx;
-        ballY2 = ballY + dy;
+        ballX2 = ballX2 + dx2;
+        ballY2 = ballY2 + dy2;
 
         // If we've hit the left or right, turn around
         if (ballX > CANVAS_WIDTH || ballX < 0) {
